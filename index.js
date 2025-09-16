@@ -16,7 +16,7 @@ client.connect()
     .catch(err => console.error('Backend2 DB Connection Error:', err));
 
 app.get('/', (req, res) => {
-     res.json({"sucess":true,"message":"yeah product-service is working fine"});
+     res.json({"sucess":true,"message":"yeah product-service is working fine hosted on aws using auto pipeline"});
 });
 
 app.get('/products', async (req, res) => {
