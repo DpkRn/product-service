@@ -21,4 +21,4 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_KEY }}
         script: |
-          sudo -i bash -c "whoami; pwd; cd /root/web-app/product-service; git pull origin release; ./build.sh; ./run.sh"
+          sudo -i bash -c "cd /root/web-app/product-service; git pull origin release; ./build.sh; ./run.sh"
